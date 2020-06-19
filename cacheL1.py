@@ -9,14 +9,14 @@ class cacheL1:
         self.writingDelayTime = 4
         self.data = {
         # block: [state, address data]
-            0x0: ['invalid', '0000', '0000'],#
+            0x0: ['invalid', '0000', '0000'],
             0x1: ['invalid', '0000', '0000']           
         }
 
         # Read in memory by block
         def readBlock(self, block):
             sleep(self.readingDelayTime)
-            return self.data[block][2]
+            return self.data[block]
 
         # Write in memory by block
         def write(self, block, state, add, data):

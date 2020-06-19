@@ -18,7 +18,7 @@ class cacheL2:
         # Read in memory
         def read(self, block):
             sleep(self.readingDelayTime)
-            return self.data[block][2]
+            return self.data[block]
 
         # Write in memory
         def write(self, block, state, owners, add, data):
