@@ -14,7 +14,7 @@ class cacheL1:
         }
 
         # Read in memory by block
-        def readBlock(self, block):
+        def read(self, block):
             sleep(self.readingDelayTime)
             return self.data[block]
 
